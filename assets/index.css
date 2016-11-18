@@ -1,0 +1,11 @@
+* {
+  outline: 1px solid magenta;
+}
+
+* {
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+}

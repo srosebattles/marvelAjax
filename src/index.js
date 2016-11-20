@@ -1,6 +1,10 @@
 $(document).ready(function(){
     // console.log('DOM IS READY');
 
+    // $("form").on("submit", function(e){
+    //   $("input:checkbox:checked").val())
+    // })
+
 $.ajax({
    url: "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=Q&limit=10&apikey=cfe92312902acf787c24d7d60c0f917c"
  }).then(function(response) {
@@ -14,7 +18,10 @@ $.each(response.data.results, function(i, char){
   console.log(charImage)
   $("#characterstuff").append(charImage)
   $("#characterstuff").append("<br>" + this.name + "<br>");
-  $("#characterstuff").append("Character ID number: " + this.id + "<br>");
+  // if ("class=charID" === checked){
+  //   $("#characterstuff").append("Character ID number: " + this.id + "<br>");
+  // }
+
   $("#characterstuff").append("<hr/>");
 }
 )

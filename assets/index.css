@@ -1,11 +1,16 @@
-* {
+/** {
   outline: 1px solid magenta;
-}
+}*/
 
 * {
-  font-family: monospace;
+  font-family: Bangers, monospace;
+  line-height: 2rem;
 }
 
 h1 {
+  text-align: center;
+}
+
+.checkboxes {
   text-align: center;
 }

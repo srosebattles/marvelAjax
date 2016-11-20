@@ -10,6 +10,9 @@ $.ajax({
 // var group = $('<div class="group"></div>')
 $.each(response.data.results, function(i, char){
   console.log(this)
+  var charImage =$('<img />').attr("src", this.thumbnail.path + "/standard_large." + this.thumbnail.extension)
+  console.log(charImage)
+  $("#characterstuff").append(charImage)
   $("#characterstuff").append("<br>" + this.name + "<br>");
   $("#characterstuff").append("Character ID number: " + this.id + "<br>");
   $("#characterstuff").append("<hr/>");

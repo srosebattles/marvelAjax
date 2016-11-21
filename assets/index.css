@@ -3,13 +3,18 @@
 }*/
 
 * {
+  box-sizing: border-box;
   font-family: Bangers, monospace;
   line-height: 2.5rem;
   color: white;
 }
 
+body {
+  max-width: 1200px;
+}
+
 header {
-  /*background-color: red;*/
+  background-color: red;
   color: black;
 }
 
@@ -40,17 +45,23 @@ h1 {
 
 .textDiv {
   display: inline-block;
+  margin-right: 5%;
 }
 
 .comicsDiv {
   display: inline-block;
+  padding-top: 1rem;
 }
 
-.imgDiv:nth-child(odd) {
+/*.imgDiv:nth-child(odd) {
   background-color: red;
 }
 
 .textDiv:nth-child(even) {
+  background-color: red;
+}*/
+
+.subgroup:nth-child(odd) {
   background-color: red;
 }
 

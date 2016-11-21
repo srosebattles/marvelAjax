@@ -1,6 +1,6 @@
-* {
+/** {
   outline: 1px solid magenta;
-}
+}*/
 
 * {
   font-family: Bangers, monospace;
@@ -50,7 +50,7 @@ h1 {
   background-color: red;
 }
 
-.textDiv:nth-child(odd) {
+.textDiv:nth-child(even) {
   background-color: red;
 }
 

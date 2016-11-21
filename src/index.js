@@ -15,7 +15,8 @@ $.each(response.data.results, function(i, char){
   console.log(this)
   var charImage =$('<img />').attr("src", this.thumbnail.path + "/standard_xlarge." + this.thumbnail.extension)
   var imgDiv = $('<div class="imgDiv"></div>')
-  var textDiv = $('<div class="imgDiv"></div>')
+  var textDiv = $('<div class="textDiv"></div>')
+  var comicsDiv = $('<div class="comicsDiv"></div>')
   imgDiv.append(charImage)
   imgDiv.append("<br>" + this.name + "<br>")
   group.append(imgDiv)
@@ -23,7 +24,7 @@ $.each(response.data.results, function(i, char){
   //   $("#characterstuff").append("Character ID number: " + this.id + "<br>");
   // }
   textDiv.append("Character ID number: " + this.id + "<br>")
-  
+
   if (this.description === "" || this.description === null){
     textDiv.append("There is no character description available right now. Our bad!")
   } else {
@@ -32,13 +33,20 @@ $.each(response.data.results, function(i, char){
 
   group.append(textDiv)
 
+  imgDiv.append(this.comics.items.name)
+  console.log(this.comics.items)
+  group.append(comicsDiv)
 
 
-  //  $.each(response.data.results.comics.items), function(i, com){
-  // console.log(this.name)
-  // //   console.log(this)
-  // //   console.log(comics.items.name)
-  //  }
+
+  //   $.each(this.comics), function(i, com){
+  //     if (this.comics < 1) {
+  //       return ""
+  //     }
+  // //  console.log(this.name)
+  // // // //   console.log(this)
+  //    console.log(comics.items.name)
+  //    }
 
   $("#characterstuff").append(group);
   group.append("<hr/>");
@@ -48,3 +56,9 @@ $.each(response.data.results, function(i, char){
 
  })
 })
+
+//Things which need to happen include:
+
+//1. Make the loop go over comics array without failing
+//2. Make checkboxes respond
+//3. Figure out wtf is going on with the divs/color scheme.

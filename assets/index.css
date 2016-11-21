@@ -4,17 +4,19 @@
 
 * {
   font-family: Bangers, monospace;
-  line-height: 2rem;
-  /*color: whitesmoke;*/
+  line-height: 2.5rem;
+  color: white;
 }
 
 header {
-  background-color: red;
+  /*background-color: red;*/
+  color: black;
 }
 
 h1 {
   text-align: center;
   margin: 0;
+  color: black;
 }
 
 .checkboxes {
@@ -22,14 +24,37 @@ h1 {
   background-color: blue;
 }
 
+.submitbutton {
+  color: black;
+}
+
 .group {
   background-color: blue;
+  font-size: 1.2rem;
+}
+
+.imgDiv {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.textDiv {
+  display: inline-block;
+}
+
+.comicsDiv {
+  display: inline-block;
 }
 
 .imgDiv:nth-child(odd) {
   background-color: red;
 }
 
+.textDiv:nth-child(odd) {
+  background-color: red;
+}
+
 hr {
   color: whitesmoke;
+  border-color: whitesmoke;
 }

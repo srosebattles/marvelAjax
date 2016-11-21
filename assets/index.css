@@ -1,16 +1,35 @@
-/** {
+* {
   outline: 1px solid magenta;
-}*/
+}
 
 * {
   font-family: Bangers, monospace;
   line-height: 2rem;
+  /*color: whitesmoke;*/
+}
+
+header {
+  background-color: red;
 }
 
 h1 {
   text-align: center;
+  margin: 0;
 }
 
 .checkboxes {
   text-align: center;
+  background-color: blue;
+}
+
+.group {
+  background-color: blue;
+}
+
+.imgDiv:nth-child(odd) {
+  background-color: red;
+}
+
+hr {
+  color: whitesmoke;
 }
